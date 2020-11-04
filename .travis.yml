@@ -1,0 +1,17 @@
+sudo: false
+language: python
+
+install:
+  - git submodule update --init --recursive
+  - pip install mkdocs mkdocs-material pymdown-extensions pygments
+script:
+  -  mkdocs build
+
+deploy:
+  provider: pages:git
+  edge: true
+  deploy_key: $GITHUB_TOKEN
+  target-branch: gh-pages
+  local_dir: site
+  on:
+    branch: main
