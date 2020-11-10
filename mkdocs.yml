@@ -1,0 +1,45 @@
+site_name: Slide template - MKDocs
+site_url:
+site_description: >
+  Templates for creating slides into static site generators
+repo_url: https://github.com/fhiegel/slide-template
+
+nav:
+  - Home: index.md
+  - Slides:
+    - Simple: pitch.md
+
+theme:
+  name: material
+  custom_dir: theme
+  palette:
+    primary: black
+    accent: red
+  feature:
+    tabs: true
+
+reveal:
+  path: reveal.js/dist
+  transition: slide
+  theme:
+    name: white.css
+    path: theme
+  plugin:
+    path: reveal.js/plugin
+
+extra:
+  author:
+    name: fhiegel
+
+# Extensions
+markdown_extensions:
+  - admonition
+  - extra
+  - meta
+  - tables
+  - toc
+  - pymdownx.details
+  - pymdownx.emoji
+  - pymdownx.smartsymbols
+  - pymdownx.tabbed
+  - pymdownx.tasklist
