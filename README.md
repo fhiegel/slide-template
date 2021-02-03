@@ -19,3 +19,8 @@ Install MkDocs and plugins, then run it
 
     pip install mkdocs mkdocs-material
     mkdocs serve
+
+## Troubleshooting
+
+When starting server locally, and going on slide page, you may encounter a Javascript error : the slide is blank.
+To workaround, go in your submodule "revealjs" and format the file `theme/reveal.js/plugin/notes/notes.js`. 
