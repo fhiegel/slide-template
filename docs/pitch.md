@@ -23,3 +23,10 @@ TODO
 
 > Some stuff
 
+---
+
+### A Slide containing an image.
+
+<img title="survey" src=test.jpg  width="300" height="300">
+
+---
